@@ -1,0 +1,23 @@
+/* footer.module.css */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Align social links and info */
+    align-items: center; /* Vertically center items */
+}
+
+.socialLinks img {
+    height: 30px; /* Adjust height of social logos */
+    margin-right: 10px; /* Add some space between logos */
+    transition: transform 0.5 ease;
+}
+
+.socialLinks img:hover {
+    transform: scale(1.1);
+}
+
+.info p {
+    margin: 0; /* Remove default margin */
+}

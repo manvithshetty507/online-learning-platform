@@ -1,0 +1,151 @@
+/* // editcourse.module.css */
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .instructor {
+    margin-bottom: 10px;
+  }
+  
+  .chapter {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chapter h4 {
+    margin-bottom: 5px;
+  }
+  
+  .editButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .saveButton {
+    background-color: #28a745;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .deleteButton {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+  
+  /* editcourse.module.css */
+
+/* Resource link */
+.resourceLink {
+  color: blue;
+  text-decoration: underline;
+  margin-right: 8px;
+}
+
+/* Delete button */
+.deleteButton {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #e74c3c;
+}
+
+/* Add Resource button */
+.addResourceButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addResourceButton:hover {
+  background-color: #45a049;
+}
+
+/* Resource list */
+.resourceList {
+  margin-top: 20px;
+}
+
+/* Resource item */
+.resourceItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Resource link */
+.resourceLink {
+  margin-right: 8px;
+}
+
+/* Delete button */
+.deleteButton {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #e74c3c;
+}
+
+/* Enrolled students section container */
+.enrolledStudentsContainer {
+  margin-top: 20px;
+}
+
+/* Enrolled students heading */
+.enrolledStudentsHeading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Enrolled students list */
+.enrolledStudentsList {
+  list-style-type: n;
+  padding: 0;
+}
+
+/* Individual enrolled student item */
+.enrolledStudent {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+

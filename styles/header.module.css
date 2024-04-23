@@ -1,0 +1,158 @@
+/* header.module.css */
+
+/* Header Styles */
+.header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Align logo and nav links */
+    align-items: center; /* Vertically center items */
+    font-family: 'Roboto', sans-serif; /* Set font family */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust height of logo image */
+    margin-right: 10px; /* Add some space between image and text */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2rem; /* Increase font size */
+    font-weight: bold; /* Set font weight */
+    font-family: 'Roboto', sans-serif; /* Set font family */
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+    animation: fadeInUp 1s ease-in-out forwards; /* Apply animation */
+}
+
+/* Navigation Styles */
+.navLinks {
+    display: flex; /* Align nav links horizontally */
+}
+
+.navLinks ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align nav links horizontally */
+}
+
+.navLinks li {
+    margin-right: 20px; /* Add spacing between nav links */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.navLinks li:hover {
+    transform: translateY(-3px); /* Move the list item up slightly on hover */
+}
+
+.navLinks a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Set font size */
+    transition: color 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.navLinks a:hover {
+    color: #90caf9; /* Light blue color on hover */
+}
+
+/* Kebab Menu Styles */
+.kebabMenu {
+    display: none; /* Initially hidden */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: auto; /* Push to the right */
+    font-size: 2rem;
+}
+
+.open {
+    display: block;
+}
+
+/* Add this to header.module.css */
+.logoutButton {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1rem; /* Set font size */
+    padding: 0; /* Remove padding */
+    transition: color 0.3s ease-in-out; /* Add smooth transition effect */
+  }
+  
+  .logoutButton:hover {
+    color: #90caf9; /* Light blue color on hover */
+  }
+  
+  /* Style for menu items */
+  .menuItems {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align nav links horizontally */
+  }
+  
+  .menuItems li {
+    margin-right: 20px; /* Add spacing between nav links */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+  }
+  
+  .menuItems li:hover {
+    transform: translateY(-3px); /* Move the list item up slightly on hover */
+  }
+  
+  .menuItems a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .menuItems a:hover {
+    color: #90caf9; /* Light blue color on hover */
+  }
+  
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.5rem; /* Decrease font size for mobile view */
+    }
+
+    .navLinks ul {
+        display: none; /* Initially hidden */
+        flex-direction: column; /* Align items vertically for mobile view */
+        position: absolute; /* Position absolutely */
+        top: calc(10% + 10px); /* Align the menu just below the menu button with some spacing */
+        right: 10%; /* Align the menu to the left */
+        background-color: #333; /* Dark background color */
+        width: auto; /* Adjust width */
+        min-width: 150px; /* Set minimum width */
+        padding: 5px; /* Add padding */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        z-index: 1; /* Ensure the menu is above other content */
+        border: 1px solid red;
+    }
+
+    .navLinks li {
+        padding:0.5rem;
+        margin-right: 10px;
+    }
+
+    .kebabMenu {
+        display: flex; /* Display kebab menu icon */
+    }
+
+    .kebabMenu.open + .navLinks ul {
+        display: flex; /* Display the menu when kebab menu is open */
+    }
+
+    .navLinks ul.open {
+        display: flex; /* Display the menu list when open */
+    }
+}

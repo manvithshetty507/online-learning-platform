@@ -1,0 +1,129 @@
+
+/* Dashboard Container */
+.dashboardContainer {
+    display: flex;
+    min-height: 72vh;
+    justify-content: space-between;
+    margin: 20px;
+    overflow-y: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile */
+.profile {
+    margin-bottom: 20px;
+}
+
+/* Navigation Links */
+.navLinks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navLinks li {
+    margin-bottom: 10px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navLinks li a:hover {
+    color: #f00; /* Change color on hover */
+}
+
+/* Main Content */
+.mainContent {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+/* Search Bar */
+.searchBar {
+    margin-bottom: 20px;
+}
+
+.searchBar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.searchBar button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchBar button[type="submit"]:hover {
+    background-color: #f44; /* Change color on hover */
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-weight: bold;
+}
+
+.filters select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Course and Quiz Cards */
+.courseCards, .quizCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.courseCard, .quizCard {
+    width: calc(50% - 10px); /* Two cards per row */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard img, .quizCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.courseCard h3, .quizCard h3 {
+    margin-top: 0;
+}
+
+.courseCard button, .quizCard button {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.courseCard button:hover, .quizCard button:hover {
+    background-color: #f44; /* Change color on hover */
+}

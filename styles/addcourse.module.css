@@ -1,0 +1,151 @@
+/* Add Course Page Container */
+.addCourseContainer {
+    margin: 20px;
+}
+
+.addCourseContainer h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+}
+
+.formGroup input[type="email"],
+.formGroup input[type="text"],
+.formGroup input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Chapter */
+.chapter {
+    margin-bottom: 20px;
+}
+
+.chapter label {
+    display: block;
+    font-weight: bold;
+}
+
+.chapter input[type="text"],
+.chapter input[type="file"] {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+}
+
+/* Remove Chapter Button */
+.removeChapterButton {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+}
+
+.removeChapterButton:hover {
+    background-color: #f44; /* Change color on hover */
+}
+
+/* Add Chapter Button */
+.addChapterButton {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.addChapterButton button {
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.addChapterButton button:hover {
+    background-color: #44f; /* Change color on hover */
+}
+
+/* Submit Button */
+.submitButton {
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #44f; /* Change color on hover */
+}
+
+
+/* editcourse.module.css */
+
+/* Styles for the form group */
+.formGroup {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the label */
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+/* editcourse.module.css */
+
+/* Styles for the form group */
+.formGroup {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the label */
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles for the JoditEditor */
+  .joditEditor {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the toolbar buttons */
+  .jodit-toolbar-button {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the toolbar buttons on hover */
+  .jodit-toolbar-button:hover {
+    background-color: #f0f0f0;
+  }
+  

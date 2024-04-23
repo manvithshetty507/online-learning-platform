@@ -1,0 +1,64 @@
+/* components/loginAndSignup/signup/page.module.css */
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .input {
+    margin: 10px;
+    padding: 10px; /* Increased padding for better appearance */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjusted width to account for margins */
+    max-width: 300px; /* Added max-width for responsiveness */
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 10px 0; /* Set padding top and bottom to match input */
+    width: 100%; /* Set button width to match input width */
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0070f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .linkButton {
+    margin-top: 20px; /* Added margin for better separation */
+    border: none;
+    background: none;
+    color: #0070f3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .linkButton:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin-top: 30px; /* Adjusted margin for smaller screens */
+    }
+  
+    .input {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 90%; /* Full width on smaller screens */
+    }
+  
+    .button {
+      margin: 8px; /* Reduced margin for smaller screens */
+    }
+  }
+  

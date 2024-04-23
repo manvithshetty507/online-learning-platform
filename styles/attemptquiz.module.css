@@ -1,0 +1,66 @@
+/* quizPage.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.creator {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submitButton {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

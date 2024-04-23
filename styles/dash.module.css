@@ -1,0 +1,40 @@
+.courseCards, .quizCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.courseCard, .quizCard {
+    width: calc(50% - 10px); /* Two cards per row */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard img, .quizCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.courseCard h3, .quizCard h3 {
+    margin-top: 0;
+}
+
+.courseCard button, .quizCard button {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.courseCard button:hover, .quizCard button:hover {
+    background-color: #f44; /* Change color on hover */
+}
+
+.para {
+    margin: 10px 0;
+}
