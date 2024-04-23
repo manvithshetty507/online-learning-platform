@@ -1,10 +1,11 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '@/styles/addcourse.module.css';
 import { db, storage } from '@/firebase/firebase';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { addDoc, collection } from 'firebase/firestore';
-import JoditEditor from 'jodit-react';
+import dynamic from 'next/dynamic';
+const DynamicJoditEditor = dynamic(() => import('jodit-react'), { ssr: false });
 
 const AddCourse = () => {
     const [email, setEmail] = useState('');
@@ -84,9 +85,9 @@ const AddCourse = () => {
                 </div>
 
                 {/* Add JoditEditor for description */}
-                <JoditEditor
+                <DynamicJoditEditor
                     value={description}
-                    onChange={(newContent) => setDescription(newContent)} 
+                    onChange={(newContent) => setDescription((prev) => newContent)} 
                     // input={(e) => setDescription(e.target.value)}
                     config={{
                         minHeight: 400,
