@@ -11,15 +11,7 @@ const AddCourse = () => {
     const [courseTitle, setCourseTitle] = useState('');
     const [chapters, setChapters] = useState([]);
     const [description, setDescription] = useState('');
-    const editorRef = useRef(null);
 
-    // Focus the editor when the description state changes
-    useEffect(() => {
-        if (editorRef.current && editorRef.current.editor) {
-            editorRef.current.editor.selection && editorRef.current.editor.selection.focus();
-        }
-    }, [description]);
-    
 
     const handleChapterUpload = (e) => {
         // Handle chapter upload logic here
@@ -65,7 +57,7 @@ const AddCourse = () => {
                 email,
                 title: courseTitle,
                 chapters: chapterDetails,
-                description: description, // Use editor value instead of ref value
+                description: description, 
             });
 
             setEmail('');
@@ -94,8 +86,8 @@ const AddCourse = () => {
                 {/* Add JoditEditor for description */}
                 <JoditEditor
                     value={description}
-                    ref={editorRef}
-                    onChange={(content) => setDescription(content)}
+                    onChange={(newContent) => setDescription(newContent)} 
+                    // input={(e) => setDescription(e.target.value)}
                     config={{
                         minHeight: 400,
                         showCharsCounter: false,
